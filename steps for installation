@@ -1,0 +1,22 @@
+root@ubuntu:~# apt-get update
+root@ubuntu:~# apt-get install default-jre
+ root@ubuntu:~#sudo apt-get install default-jdk
+ Oracle JDK 8:
+     apt-get install oracle-java8-installer
+ root@ubuntu:~# java -version
+java version "1.8.0_144"
+Java(TM) SE Runtime Environment (build 1.8.0_144-b01)
+Java HotSpot(TM) 64-Bit Server VM (build 25.144-b01, mixed mode)
+Installing Jenkins
+root@ubuntu:~# wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | apt-key add -
+root@ubuntu:~# echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list
+ root@ubuntu:~# apt-get update
+  root@ubuntu:~# apt-get install jenkins
+   root@ubuntu:~# service jenkins status
+   
+   Configure Jenkins On The Web
+   
+http://localhost:8080 or http://your-ip-address:8080
+You should now see a ‘Customize Jenkins’ page where you will select how to install your plugins.
+Complete the required fields, and click on save and finish.
+
